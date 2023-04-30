@@ -9,6 +9,8 @@ import { Plant } from '../plant';
 })
 export class PlantListComponent implements OnInit {
 
+  interior: number = 0;
+  exterior: number = 0;
   plants: Array<Plant> = [];
   constructor(private plantService: PlantService) { }
 
@@ -19,6 +21,14 @@ export class PlantListComponent implements OnInit {
   getPlants(){
     this.plantService.getPlants().subscribe(plants => {
       this.plants = plants;
+      this.plants.forEach(plant => {
+        if(plant.tipo == "Interior"){
+          this.interior++;
+        }
+        else{
+          this.exterior++;
+        }
+      })
     });
   }
 

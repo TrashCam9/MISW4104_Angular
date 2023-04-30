@@ -1,3 +1,35 @@
-<p>
-  plant-list works!
-</p>
+<div class="container-fluid px-5 py-2">
+  <div class="row bottom-shadow border-bottom">
+    <h3 class="shadowed-text kaisei bolded">Vivero El Otoño</h3>
+  </div>
+  <div class="row py-4">
+      <img src="../../../assets/img/plant.jpg" class="bottom-shadow" id="imagen">
+  </div>
+  <div class="row" id="tabla">
+    <table class="table">
+      <thead class="table-dark bottom-shadow">
+        <tr>
+          <th scope="col" class="shadowed-text-light">#</th>
+          <th scope="col" class="shadowed-text-light">Nombre común</th>
+          <th scope="col" class="shadowed-text-light">Tipo</th>
+          <th scope="col" class="shadowed-text-light">Clima</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let plant of plants" class="bottom-shadow">
+          <th scope="row" class="shadowed-text-light">{{plant.id}}</th>
+          <td class="shadowed-text-light">{{plant.nombre_comun}}</td>
+          <td class="shadowed-text-light">{{plant.tipo}}</td>
+          <td class="shadowed-text-light">{{plant.clima}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row">
+    <p>Total plantas de exterior: {{interior}}</p>
+  </div>
+  <div class="row">
+    <p>Total plantas de interior: {{exterior}}</p>
+  </div>
+  <p class="py-5 shadowed-text bolded text-center">Contact us: +57 3102105253 - info@viveroelotonio.com - @viveroelotonio</p>
+</div>
