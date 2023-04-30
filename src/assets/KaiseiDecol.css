@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Kaisei Decol';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Kaisei Decol/Kaisei-Decol-normal-400.eot);
+  src: local('Kaisei Decol'), url(../fonts/Kaisei Decol/Kaisei-Decol-normal-400.ttf) format('truetype'), url(../fonts/Kaisei Decol/Kaisei-Decol-normal-400.svg#KaiseiDecol) format('svg'), url(../fonts/Kaisei Decol/Kaisei-Decol-normal-400.woff2) format('woff2'), url(../fonts/Kaisei Decol/Kaisei-Decol-normal-400.woff) format('woff'), url(../fonts/Kaisei Decol/Kaisei-Decol-normal-400.eot?#iefix) format('embedded-opentype');
+}
+
+@font-face {
+  font-family: 'Kaisei Decol';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/Kaisei Decol/Kaisei-Decol-normal-700.ttf) format('truetype'), url(../fonts/Kaisei Decol/Kaisei-Decol-normal-700.woff2) format('woff2'), url(../fonts/Kaisei Decol/Kaisei-Decol-normal-700.woff) format('woff');
+}
+
