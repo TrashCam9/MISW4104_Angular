@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Plant } from './plant';
 
 @Injectable({
   providedIn: 'root'
@@ -9,6 +10,6 @@ export class PlantService {
   constructor(private http: HttpClient) { }
 
   getPlants(){
-    return this.http.get(this.jsonURL);
+    return this.http.get<Plant[]>(this.jsonURL);
   }
 }
